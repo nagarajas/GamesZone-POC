@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GamesZone.MVVM.GameDetailsPage" Title="Game Details">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+        <Style TargetType="Label" Class="HeaderLabel">
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid Padding="10" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="6*"/>
+                </Grid.ColumnDefinitions>
+                <Label StyleClass="HeaderLabel" FontSize="16" FontAttributes="Bold" Text="{Binding SeasonWeekGame}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" BackgroundColor="Beige"/>
+                <Label Text="GameType" FontAttributes="Bold"  Grid.Row="1" Grid.Column="0" Padding="10"/>
+                <Label Text="{Binding EventType}" Grid.Row="1" Grid.Column="1" Padding="10"/>
+                <Label Text="Team 1" FontAttributes="Bold" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="{Binding Team1Info}" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Team 2" FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="{Binding Team2Info}" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="Date/Time" FontAttributes="Bold" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="{Binding MatchDateTime}" Grid.Row="4" Grid.Column="1"/>
+                <Label Text="Venue" FontAttributes="Bold" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="{Binding Venue}" Grid.Row="5" Grid.Column="1"/>
+                <Label Text="Ticket Booking" FontAttributes="Bold" Grid.Row="6" Grid.Column="0"/>
+                <Label Grid.Row="6" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Click here to book"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="{Binding TicketsURL}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

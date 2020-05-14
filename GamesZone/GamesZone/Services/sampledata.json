@@ -1,0 +1,1944 @@
+{
+  "data": [
+    {
+      "game_id": 2172,
+      "date_start": "2015-06-08T19:30:00-04:00",
+      "game_number": 1,
+      "week": 1,
+      "season": 2015,
+      "attendance": 0,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 13
+      },
+      "venue": {
+        "venue_id": 4,
+        "name": "Tim Hortons Field"
+      },
+      "weather": {
+        "temperature": 21,
+        "sky": "Overcast",
+        "wind_speed": "",
+        "wind_direction": "6km/h SW",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Ottawa won coin toss and elected to receive."
+      },
+      "tickets_url": "http://www.ticats.ca/tickets/",
+      "team_1": {
+        "team_id": 6,
+        "location": "Ottawa",
+        "nickname": "Redblacks",
+        "abbreviation": "OTT",
+        "score": 10,
+        "venue_id": 6,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 0
+          },
+          {
+            "quarter": 4,
+            "score": 10
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 4,
+        "location": "Hamilton",
+        "nickname": "Tiger-Cats",
+        "abbreviation": "HAM",
+        "score": 37,
+        "venue_id": 4,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 13
+          },
+          {
+            "quarter": 3,
+            "score": 14
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2173,
+      "date_start": "2015-06-09T19:30:00-04:00",
+      "game_number": 2,
+      "week": 2,
+      "season": 2015,
+      "attendance": 5000,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 1,
+        "yards_to_go": 10
+      },
+      "venue": {
+        "venue_id": 10,
+        "name": "Varsity Stadium"
+      },
+      "weather": {
+        "temperature": 16,
+        "sky": "Cloudy",
+        "wind_speed": "",
+        "wind_direction": "5 km per  hour",
+        "field_conditions": "Dry, artificial turf"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Coin toss: Toronto won the toss and elected to receive."
+      },
+      "tickets_url": "http://www.argonauts.ca/tickets/",
+      "team_1": {
+        "team_id": 9,
+        "location": "Winnipeg",
+        "nickname": "Blue Bombers",
+        "abbreviation": "WPG",
+        "score": 34,
+        "venue_id": 9,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 10
+          },
+          {
+            "quarter": 3,
+            "score": 14
+          },
+          {
+            "quarter": 4,
+            "score": 7
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 8,
+        "location": "Toronto",
+        "nickname": "Argonauts",
+        "abbreviation": "TOR",
+        "score": 27,
+        "venue_id": 8,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 6
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 8
+          },
+          {
+            "quarter": 4,
+            "score": 13
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2174,
+      "date_start": "2015-06-12T19:30:00-04:00",
+      "game_number": 3,
+      "week": 2,
+      "season": 2015,
+      "attendance": 28557,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 16
+      },
+      "venue": {
+        "venue_id": 2,
+        "name": "McMahon Stadium"
+      },
+      "weather": {
+        "temperature": 13,
+        "sky": "Overcast",
+        "wind_speed": "",
+        "wind_direction": "S 7",
+        "field_conditions": "Wet"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Calgary wins toss - elected to receive.\r\nBC kicking from north end."
+      },
+      "tickets_url": "http://www.stampeders.com/tickets/",
+      "team_1": {
+        "team_id": 1,
+        "location": "BC",
+        "nickname": "Lions",
+        "abbreviation": "BC",
+        "score": 6,
+        "venue_id": 1,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 0
+          },
+          {
+            "quarter": 4,
+            "score": 0
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 2,
+        "location": "Calgary",
+        "nickname": "Stampeders",
+        "abbreviation": "CGY",
+        "score": 20,
+        "venue_id": 2,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 6
+          },
+          {
+            "quarter": 4,
+            "score": 8
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2175,
+      "date_start": "2015-06-13T13:00:00-04:00",
+      "game_number": 4,
+      "week": 2,
+      "season": 2015,
+      "attendance": 4778,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 2,
+        "yards_to_go": 15
+      },
+      "venue": {
+        "venue_id": 11,
+        "name": "Stade TELUS-Universite Laval"
+      },
+      "weather": {
+        "temperature": 26,
+        "sky": "Clear and sunny",
+        "wind_speed": "",
+        "wind_direction": "19 kmh",
+        "field_conditions": "dry field"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Ottawa won the coin toss and elected to receive. Final attendance not available."
+      },
+      "tickets_url": "http://www.ottawaredblacks.com/tickets/",
+      "team_1": {
+        "team_id": 5,
+        "location": "Montreal",
+        "nickname": "Alouettes",
+        "abbreviation": "MTL",
+        "score": 26,
+        "venue_id": 5,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 1
+          },
+          {
+            "quarter": 2,
+            "score": 11
+          },
+          {
+            "quarter": 3,
+            "score": 7
+          },
+          {
+            "quarter": 4,
+            "score": 7
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 6,
+        "location": "Ottawa",
+        "nickname": "Redblacks",
+        "abbreviation": "OTT",
+        "score": 9,
+        "venue_id": 6,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 0
+          },
+          {
+            "quarter": 4,
+            "score": 6
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2176,
+      "date_start": "2015-06-13T14:00:00-04:00",
+      "game_number": 5,
+      "week": 2,
+      "season": 2015,
+      "attendance": 11825,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 2,
+        "yards_to_go": 13
+      },
+      "venue": {
+        "venue_id": 12,
+        "name": "SMS Equipment Stadium"
+      },
+      "weather": {
+        "temperature": 16,
+        "sky": "Mostly Cloudy",
+        "wind_speed": "",
+        "wind_direction": "North 18 kms gusting to 39 kms",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Saskatchewan wins the coin toss and defers to the second half.  Edmonton elects to receive and will defend the south endzone."
+      },
+      "tickets_url": "http://www.esks.com/tickets/",
+      "team_1": {
+        "team_id": 7,
+        "location": "Saskatchewan",
+        "nickname": "Roughriders",
+        "abbreviation": "SSK",
+        "score": 24,
+        "venue_id": 7,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 11
+          },
+          {
+            "quarter": 3,
+            "score": 13
+          },
+          {
+            "quarter": 4,
+            "score": 0
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 3,
+        "location": "Edmonton",
+        "nickname": "Eskimos",
+        "abbreviation": "EDM",
+        "score": 31,
+        "venue_id": 3,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 14
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 14
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2177,
+      "date_start": "2015-06-18T19:30:00-04:00",
+      "game_number": 6,
+      "week": 3,
+      "season": 2015,
+      "attendance": 16325,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 2,
+        "yards_to_go": 6
+      },
+      "venue": {
+        "venue_id": 5,
+        "name": "Percival Molson Memorial Stadium"
+      },
+      "weather": {
+        "temperature": 22,
+        "sky": "clear",
+        "wind_speed": "",
+        "wind_direction": "15 kmh",
+        "field_conditions": "dry turf"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": ""
+      },
+      "tickets_url": "http://www.montrealalouettes.com/alouettes-billets/",
+      "team_1": {
+        "team_id": 8,
+        "location": "Toronto",
+        "nickname": "Argonauts",
+        "abbreviation": "TOR",
+        "score": 30,
+        "venue_id": 8,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 19
+          },
+          {
+            "quarter": 3,
+            "score": 8
+          },
+          {
+            "quarter": 4,
+            "score": 0
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 5,
+        "location": "Montreal",
+        "nickname": "Alouettes",
+        "abbreviation": "MTL",
+        "score": 10,
+        "venue_id": 5,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 0
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2178,
+      "date_start": "2015-06-19T19:30:00-04:00",
+      "game_number": 7,
+      "week": 3,
+      "season": 2015,
+      "attendance": 24344,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 1,
+        "yards_to_go": 10
+      },
+      "venue": {
+        "venue_id": 9,
+        "name": "IG Field"
+      },
+      "weather": {
+        "temperature": 15,
+        "sky": "Cloudy",
+        "wind_speed": "",
+        "wind_direction": "ENE 14km",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Hamilton wins the coin toss and defers to the second half.  Winnipeg elects to defend the South endzone.  Hamilton elects to receive."
+      },
+      "tickets_url": "http://www.bluebombers.com/tickets/",
+      "team_1": {
+        "team_id": 4,
+        "location": "Hamilton",
+        "nickname": "Tiger-Cats",
+        "abbreviation": "HAM",
+        "score": 26,
+        "venue_id": 4,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 10
+          },
+          {
+            "quarter": 2,
+            "score": 10
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 9,
+        "location": "Winnipeg",
+        "nickname": "Blue Bombers",
+        "abbreviation": "WPG",
+        "score": 15,
+        "venue_id": 9,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 0
+          },
+          {
+            "quarter": 4,
+            "score": 8
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2179,
+      "date_start": "2015-06-19T19:30:00-04:00",
+      "game_number": 8,
+      "week": 3,
+      "season": 2015,
+      "attendance": 0,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 13
+      },
+      "venue": {
+        "venue_id": 7,
+        "name": "Mosaic Stadium (Taylor Field)"
+      },
+      "weather": {
+        "temperature": 19,
+        "sky": "Storm Warnings",
+        "wind_speed": "",
+        "wind_direction": "W 15 km/hr",
+        "field_conditions": "wet, artificial"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Saskatchewan won the coin toss and will receive opening kickoff."
+      },
+      "tickets_url": "http://www.riderville.com/tickets/",
+      "team_1": {
+        "team_id": 2,
+        "location": "Calgary",
+        "nickname": "Stampeders",
+        "abbreviation": "CGY",
+        "score": 37,
+        "venue_id": 2,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 10
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 21
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 7,
+        "location": "Saskatchewan",
+        "nickname": "Roughriders",
+        "abbreviation": "SSK",
+        "score": 29,
+        "venue_id": 7,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 6
+          },
+          {
+            "quarter": 2,
+            "score": 13
+          },
+          {
+            "quarter": 3,
+            "score": 7
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2180,
+      "date_start": "2015-06-20T20:08:00-04:00",
+      "game_number": 9,
+      "week": 3,
+      "season": 2015,
+      "attendance": 6117,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 0,
+        "name": "Preseason",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 1,
+        "yards_to_go": 10
+      },
+      "venue": {
+        "venue_id": 13,
+        "name": "Thunderbird Stadium"
+      },
+      "weather": {
+        "temperature": 18,
+        "sky": "Cloudy",
+        "wind_speed": "",
+        "wind_direction": "WSW 11 km/h",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Edmonton won the coin toss and deferred. Lions chose to receive."
+      },
+      "tickets_url": "http://www.bclions.com/tickets/",
+      "team_1": {
+        "team_id": 3,
+        "location": "Edmonton",
+        "nickname": "Eskimos",
+        "abbreviation": "EDM",
+        "score": 18,
+        "venue_id": 3,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 11
+          },
+          {
+            "quarter": 3,
+            "score": 1
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 1,
+        "location": "BC",
+        "nickname": "Lions",
+        "abbreviation": "BC",
+        "score": 13,
+        "venue_id": 1,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 0
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2181,
+      "date_start": "2015-06-25T19:30:00-04:00",
+      "game_number": 10,
+      "week": 1,
+      "season": 2015,
+      "attendance": 21524,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 7
+      },
+      "venue": {
+        "venue_id": 5,
+        "name": "Percival Molson Memorial Stadium"
+      },
+      "weather": {
+        "temperature": 21,
+        "sky": "Mostly Cloudy",
+        "wind_speed": "",
+        "wind_direction": "WNW 16 km/h",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Montreal wins the coin toss and elects to receive the ball.  They will defend the west end-zone"
+      },
+      "tickets_url": "http://www.montrealalouettes.com/alouettes-billets/",
+      "team_1": {
+        "team_id": 6,
+        "location": "Ottawa",
+        "nickname": "Redblacks",
+        "abbreviation": "OTT",
+        "score": 20,
+        "venue_id": 6,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 5
+          },
+          {
+            "quarter": 3,
+            "score": 8
+          },
+          {
+            "quarter": 4,
+            "score": 7
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 5,
+        "location": "Montreal",
+        "nickname": "Alouettes",
+        "abbreviation": "MTL",
+        "score": 16,
+        "venue_id": 5,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 6
+          },
+          {
+            "quarter": 2,
+            "score": 7
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 0
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2182,
+      "date_start": "2015-06-26T19:00:00-04:00",
+      "game_number": 11,
+      "week": 1,
+      "season": 2015,
+      "attendance": 28487,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 1,
+        "yards_to_go": 10
+      },
+      "venue": {
+        "venue_id": 2,
+        "name": "McMahon Stadium"
+      },
+      "weather": {
+        "temperature": 30,
+        "sky": "Clear",
+        "wind_speed": "",
+        "wind_direction": "SE 14 KM/H",
+        "field_conditions": "Turf - Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Calgary wins the coin toss and elects to receive. Hamilton will kick-off from the south end."
+      },
+      "tickets_url": "http://www.stampeders.com/tickets/",
+      "team_1": {
+        "team_id": 4,
+        "location": "Hamilton",
+        "nickname": "Tiger-Cats",
+        "abbreviation": "HAM",
+        "score": 23,
+        "venue_id": 4,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 15
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 2
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 2,
+        "location": "Calgary",
+        "nickname": "Stampeders",
+        "abbreviation": "CGY",
+        "score": 24,
+        "venue_id": 2,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 8
+          },
+          {
+            "quarter": 4,
+            "score": 6
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2183,
+      "date_start": "2015-06-27T15:00:00-04:00",
+      "game_number": 12,
+      "week": 1,
+      "season": 2015,
+      "attendance": 4900,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 13
+      },
+      "venue": {
+        "venue_id": 12,
+        "name": "SMS Equipment Stadium"
+      },
+      "weather": {
+        "temperature": 30,
+        "sky": "clear and sunny",
+        "wind_speed": "",
+        "wind_direction": "19 kmh",
+        "field_conditions": "dry turf"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Edmonton wins the coin toss and defers to the second half.  Toronto elects to receive the kick."
+      },
+      "tickets_url": "http://www.argonauts.ca/tickets/",
+      "team_1": {
+        "team_id": 3,
+        "location": "Edmonton",
+        "nickname": "Eskimos",
+        "abbreviation": "EDM",
+        "score": 11,
+        "venue_id": 3,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 1
+          },
+          {
+            "quarter": 4,
+            "score": 0
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 8,
+        "location": "Toronto",
+        "nickname": "Argonauts",
+        "abbreviation": "TOR",
+        "score": 26,
+        "venue_id": 8,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 10
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 6
+          },
+          {
+            "quarter": 4,
+            "score": 10
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2184,
+      "date_start": "2015-06-27T18:00:00-04:00",
+      "game_number": 13,
+      "week": 1,
+      "season": 2015,
+      "attendance": 32288,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 6
+      },
+      "venue": {
+        "venue_id": 7,
+        "name": "Mosaic Stadium (Taylor Field)"
+      },
+      "weather": {
+        "temperature": 28,
+        "sky": "Sunny",
+        "wind_speed": "",
+        "wind_direction": "NNW 20 km/hr",
+        "field_conditions": "Dry, Artificial"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Coin Toss Details: Winnipeg won the coin toss and defers to the second half.  Saskatchewan to receive opening kickoff."
+      },
+      "tickets_url": "http://www.riderville.com/tickets/",
+      "team_1": {
+        "team_id": 9,
+        "location": "Winnipeg",
+        "nickname": "Blue Bombers",
+        "abbreviation": "WPG",
+        "score": 30,
+        "venue_id": 9,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 8
+          },
+          {
+            "quarter": 3,
+            "score": 8
+          },
+          {
+            "quarter": 4,
+            "score": 7
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 7,
+        "location": "Saskatchewan",
+        "nickname": "Roughriders",
+        "abbreviation": "SSK",
+        "score": 26,
+        "venue_id": 7,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 14
+          },
+          {
+            "quarter": 3,
+            "score": 9
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2185,
+      "date_start": "2015-07-02T19:30:00-04:00",
+      "game_number": 14,
+      "week": 2,
+      "season": 2015,
+      "attendance": 27279,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 7
+      },
+      "venue": {
+        "venue_id": 9,
+        "name": "IG Field"
+      },
+      "weather": {
+        "temperature": 23,
+        "sky": "Smoke",
+        "wind_speed": "",
+        "wind_direction": "NW - 12 kms",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Winnipeg wins the coin toss and defers to the second half.  Hamilton elects to receive and will defend the north endzone."
+      },
+      "tickets_url": "http://www.bluebombers.com/tickets/",
+      "team_1": {
+        "team_id": 4,
+        "location": "Hamilton",
+        "nickname": "Tiger-Cats",
+        "abbreviation": "HAM",
+        "score": 52,
+        "venue_id": 4,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 17
+          },
+          {
+            "quarter": 2,
+            "score": 21
+          },
+          {
+            "quarter": 3,
+            "score": 11
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 9,
+        "location": "Winnipeg",
+        "nickname": "Blue Bombers",
+        "abbreviation": "WPG",
+        "score": 26,
+        "venue_id": 9,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 6
+          },
+          {
+            "quarter": 3,
+            "score": 5
+          },
+          {
+            "quarter": 4,
+            "score": 8
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2186,
+      "date_start": "2015-07-03T19:30:00-04:00",
+      "game_number": 15,
+      "week": 2,
+      "season": 2015,
+      "attendance": 19111,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 12
+      },
+      "venue": {
+        "venue_id": 5,
+        "name": "Percival Molson Memorial Stadium"
+      },
+      "weather": {
+        "temperature": 25,
+        "sky": "Clear",
+        "wind_speed": "",
+        "wind_direction": "Light",
+        "field_conditions": "Dry (Turf)"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Calgary wins the coin toss and will receive the ball.  Montreal will kickoff and defend the west end-zone"
+      },
+      "tickets_url": "http://www.montrealalouettes.com/alouettes-billets/",
+      "team_1": {
+        "team_id": 2,
+        "location": "Calgary",
+        "nickname": "Stampeders",
+        "abbreviation": "CGY",
+        "score": 11,
+        "venue_id": 2,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 8
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 5,
+        "location": "Montreal",
+        "nickname": "Alouettes",
+        "abbreviation": "MTL",
+        "score": 29,
+        "venue_id": 5,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 9
+          },
+          {
+            "quarter": 3,
+            "score": 6
+          },
+          {
+            "quarter": 4,
+            "score": 7
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2187,
+      "date_start": "2015-07-04T18:00:00-04:00",
+      "game_number": 16,
+      "week": 2,
+      "season": 2015,
+      "attendance": 24376,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 1,
+        "yards_to_go": 10
+      },
+      "venue": {
+        "venue_id": 6,
+        "name": "TD Place Stadium"
+      },
+      "weather": {
+        "temperature": 20,
+        "sky": "Cloudy",
+        "wind_speed": "",
+        "wind_direction": "11 kmh NNW",
+        "field_conditions": "Dry turf"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Ottawa won the coin toss and elected to receive."
+      },
+      "tickets_url": "http://www.ottawaredblacks.com/tickets/",
+      "team_1": {
+        "team_id": 1,
+        "location": "BC",
+        "nickname": "Lions",
+        "abbreviation": "BC",
+        "score": 16,
+        "venue_id": 1,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 4
+          },
+          {
+            "quarter": 3,
+            "score": 9
+          },
+          {
+            "quarter": 4,
+            "score": 0
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 6,
+        "location": "Ottawa",
+        "nickname": "Redblacks",
+        "abbreviation": "OTT",
+        "score": 27,
+        "venue_id": 6,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 10
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 14
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2188,
+      "date_start": "2015-07-05T13:30:00-04:00",
+      "game_number": 17,
+      "week": 2,
+      "season": 2015,
+      "attendance": 31907,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 5,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 0,
+        "yards_to_go": 0
+      },
+      "venue": {
+        "venue_id": 7,
+        "name": "Mosaic Stadium (Taylor Field)"
+      },
+      "weather": {
+        "temperature": 21,
+        "sky": "Partly Cloudy",
+        "wind_speed": "",
+        "wind_direction": "NW 33-47 km/hr",
+        "field_conditions": "Dry, Artificial"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Coin Toss Details:  Toronto won the coin toss and defers to second half.  Toronto to receive opening kickoff.\r\nOvertime Details:  Saskatchewan has first possession for OT."
+      },
+      "tickets_url": "http://www.riderville.com/tickets/",
+      "team_1": {
+        "team_id": 8,
+        "location": "Toronto",
+        "nickname": "Argonauts",
+        "abbreviation": "TOR",
+        "score": 42,
+        "venue_id": 8,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 7
+          },
+          {
+            "quarter": 3,
+            "score": 1
+          },
+          {
+            "quarter": 4,
+            "score": 17
+          },
+          {
+            "quarter": "ot",
+            "score": 14
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": true
+      },
+      "team_2": {
+        "team_id": 7,
+        "location": "Saskatchewan",
+        "nickname": "Roughriders",
+        "abbreviation": "SSK",
+        "score": 40,
+        "venue_id": 7,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 14
+          },
+          {
+            "quarter": 3,
+            "score": 4
+          },
+          {
+            "quarter": 4,
+            "score": 7
+          },
+          {
+            "quarter": "ot",
+            "score": 12
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": false
+      }
+    },
+    {
+      "game_id": 2189,
+      "date_start": "2015-07-09T19:00:00-04:00",
+      "game_number": 18,
+      "week": 3,
+      "season": 2015,
+      "attendance": 29904,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 10
+      },
+      "venue": {
+        "venue_id": 3,
+        "name": "Commonwealth Stadium"
+      },
+      "weather": {
+        "temperature": 34,
+        "sky": "Sunny",
+        "wind_speed": "",
+        "wind_direction": "NNW 9 km/h",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Edm wins the toss, deferred to the second half.  Ott received the ball."
+      },
+      "tickets_url": "http://www.esks.com/tickets/",
+      "team_1": {
+        "team_id": 6,
+        "location": "Ottawa",
+        "nickname": "Redblacks",
+        "abbreviation": "OTT",
+        "score": 17,
+        "venue_id": 6,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 11
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 3,
+        "location": "Edmonton",
+        "nickname": "Eskimos",
+        "abbreviation": "EDM",
+        "score": 46,
+        "venue_id": 3,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 14
+          },
+          {
+            "quarter": 2,
+            "score": 22
+          },
+          {
+            "quarter": 3,
+            "score": 7
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2190,
+      "date_start": "2015-07-10T18:00:00-04:00",
+      "game_number": 19,
+      "week": 3,
+      "season": 2015,
+      "attendance": 25605,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 3,
+        "yards_to_go": 12
+      },
+      "venue": {
+        "venue_id": 9,
+        "name": "IG Field"
+      },
+      "weather": {
+        "temperature": 30,
+        "sky": "Sunny",
+        "wind_speed": "",
+        "wind_direction": "SW 22 kms gusting to 34 kms",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Winnipeg wins the toss and elects to receive and Montreal will defend the north endzone."
+      },
+      "tickets_url": "http://www.bluebombers.com/tickets/",
+      "team_1": {
+        "team_id": 5,
+        "location": "Montreal",
+        "nickname": "Alouettes",
+        "abbreviation": "MTL",
+        "score": 23,
+        "venue_id": 5,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 0
+          },
+          {
+            "quarter": 2,
+            "score": 10
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 10
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 9,
+        "location": "Winnipeg",
+        "nickname": "Blue Bombers",
+        "abbreviation": "WPG",
+        "score": 25,
+        "venue_id": 9,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 6
+          },
+          {
+            "quarter": 2,
+            "score": 13
+          },
+          {
+            "quarter": 3,
+            "score": 3
+          },
+          {
+            "quarter": 4,
+            "score": 3
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    },
+    {
+      "game_id": 2191,
+      "date_start": "2015-07-10T19:00:00-04:00",
+      "game_number": 20,
+      "week": 3,
+      "season": 2015,
+      "attendance": 23062,
+      "game_duration": null,
+      "event_type": {
+        "event_type_id": 1,
+        "name": "Regular Season",
+        "title": ""
+      },
+      "event_status": {
+        "event_status_id": 4,
+        "name": "Final",
+        "is_active": false,
+        "quarter": 5,
+        "minutes": 0,
+        "seconds": 0,
+        "down": 2,
+        "yards_to_go": 4
+      },
+      "venue": {
+        "venue_id": 1,
+        "name": "BC Place"
+      },
+      "weather": {
+        "temperature": 21,
+        "sky": "Clear",
+        "wind_speed": "",
+        "wind_direction": "SE 24 km/h",
+        "field_conditions": "Dry"
+      },
+      "coin_toss": {
+        "coin_toss_winner": "",
+        "coin_toss_winner_election": "Saskatchewan won the coin toss and elected to receive."
+      },
+      "tickets_url": "http://www.bclions.com/tickets/",
+      "team_1": {
+        "team_id": 7,
+        "location": "Saskatchewan",
+        "nickname": "Roughriders",
+        "abbreviation": "SSK",
+        "score": 32,
+        "venue_id": 7,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 7
+          },
+          {
+            "quarter": 2,
+            "score": 0
+          },
+          {
+            "quarter": 3,
+            "score": 8
+          },
+          {
+            "quarter": 4,
+            "score": 14
+          },
+          {
+            "quarter": "ot",
+            "score": 3
+          }
+        ],
+        "is_at_home": false,
+        "is_winner": false
+      },
+      "team_2": {
+        "team_id": 1,
+        "location": "BC",
+        "nickname": "Lions",
+        "abbreviation": "BC",
+        "score": 35,
+        "venue_id": 1,
+        "linescores": [
+          {
+            "quarter": 1,
+            "score": 3
+          },
+          {
+            "quarter": 2,
+            "score": 3
+          },
+          {
+            "quarter": 3,
+            "score": 6
+          },
+          {
+            "quarter": 4,
+            "score": 17
+          },
+          {
+            "quarter": "ot",
+            "score": 6
+          }
+        ],
+        "is_at_home": true,
+        "is_winner": true
+      }
+    }
+  ],
+  "errors": [],
+  "meta": {
+    "copyright": "Copyright 2020 Canadian Football League."
+  }
+}

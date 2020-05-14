@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:GamesZone.MVVM" xmlns:custom="clr-namespace:GamesZone.CustomControls"
+             x:Class="GamesZone.MVVM.UpcommingGamesPage" Title="GamesZone">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
+            <local:TextChangedEventArgsToTextChangedConverter x:Key="TextChangedConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="Search by Team Abbr. e.g.HAM ...." Margin="10" SearchCommand="{Binding SearchGames}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
+                <custom:RoundedCornerSearchBar.Behaviors>
+                    <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
+            Converter="{StaticResource TextChangedConverter}" />
+                </custom:RoundedCornerSearchBar.Behaviors>
+            </custom:RoundedCornerSearchBar>
+            <ListView x:Name="lstUpcommingGames" ItemsSource="{Binding UpcommingGames}" HasUnevenRows="True" BackgroundColor="White" SeparatorVisibility="None">
+            <ListView.Behaviors>
+                <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding SelectGameCommand}" 
+            Converter="{StaticResource SelectedItemConverter}" />
+	</ListView.Behaviors>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <local:GamesListTemplate/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GamesZone.MVVM.PlayerDetailsPage" Title="Player Details"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"  
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"  
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+        <Style TargetType="Label" Class="HeaderLabel">
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid Padding="10" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="6*"/>
+                </Grid.ColumnDefinitions>
+                <ff:CachedImage Source="{Binding ImageURL}" ErrorPlaceholder="defaultuser.PNG" LoadingPlaceholder="defaultuser.png" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center">
+                    <ff:CachedImage.Transformations>
+                        <ffTransformations:CircleTransformation/>
+                    </ff:CachedImage.Transformations>
+                </ff:CachedImage>
+                <Label Text="{Binding FullName}" FontAttributes="Bold"  Grid.Row="1" Grid.ColumnSpan="2" Padding="10" HorizontalOptions="Center"/>
+                <Label Text="Birth Date" FontAttributes="Bold" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="{Binding BirthDate}" Grid.Row="2" Grid.Column="1" Padding="10"/>
+                <Label Text="Birth Place" FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="{Binding BirthPlace}" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="Position" FontAttributes="Bold" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="{Binding Position}" Grid.Row="4" Grid.Column="1"/>
+                <Label Text="Height" FontAttributes="Bold" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="{Binding Height}" Grid.Row="5" Grid.Column="1"/>
+                <Label Text="Weight" FontAttributes="Bold" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="{Binding Weight}" Grid.Row="6" Grid.Column="1"/>
+                <Label Text="School" FontAttributes="Bold" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="{Binding SchoolName}" Grid.Row="7" Grid.Column="1"/>
+                <Label Text="Foreign Player" FontAttributes="Bold" Grid.Row="8" Grid.Column="0"/>
+                <Label Text="{Binding IsForeignPlayer}" Grid.Row="8" Grid.Column="1"/>
+                <Label Text="Rookie Year" FontAttributes="Bold" Grid.Row="9" Grid.Column="0"/>
+                <Label Text="{Binding RookieYear}" Grid.Row="9" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

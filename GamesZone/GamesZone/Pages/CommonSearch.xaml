@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:GamesZone.MVVM" xmlns:custom="clr-namespace:GamesZone.CustomControls"
+             x:Class="GamesZone.MVVM.CommonSearch">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <local:TextChangedEventArgsToTextChangedConverter x:Key="TextChangedConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+  <ContentView.Content>
+        <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="Search by Team Abbr. e.g.HAM ...." Margin="10" SearchCommand="{Binding SearchGames}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
+            <custom:RoundedCornerSearchBar.Behaviors>
+                <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
+            Converter="{StaticResource TextChangedConverter}" />
+            </custom:RoundedCornerSearchBar.Behaviors>
+        </custom:RoundedCornerSearchBar>
+    </ContentView.Content>
+</ContentView>

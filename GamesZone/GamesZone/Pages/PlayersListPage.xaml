@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             xmlns:custom="clr-namespace:GamesZone.CustomControls"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"  
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"  
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+              xmlns:local="clr-namespace:GamesZone.MVVM"
+             x:Class="GamesZone.MVVM.PlayersListPage" Title="Players List">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:TextChangedEventArgsToTextChangedConverter x:Key="TextChangedConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="Search by First Name ...." Margin="10" SearchCommand="{Binding SearchPlayers}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}" TextChanged="searchControl_TextChanged">
+                <custom:RoundedCornerSearchBar.Behaviors>
+                    <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
+            Converter="{StaticResource TextChangedConverter}" />
+                </custom:RoundedCornerSearchBar.Behaviors>
+            </custom:RoundedCornerSearchBar>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+            <flv:FlowListView FlowColumnCount="3" SeparatorVisibility="Default" HasUnevenRows="True" FlowItemsSource="{Binding PlayersList}" FlowItemTappedCommand="{Binding PlayerTappedCommand}" FlowLastTappedItem = "{Binding SelectedPlayer}">
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White" Margin="5" BorderColor="White"
+HasShadow="True"       CornerRadius="5">
+                            <StackLayout>
+                                <ff:CachedImage Source="{Binding ImageURL}" ErrorPlaceholder="defaultuser.PNG" LoadingPlaceholder="defaultuser.png"/>
+                                <!--<Image Source="https://www.iconsdb.com/icons/preview/maroon/free-badge-xxl.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="100"/>-->
+                                <Label Text="{Binding FullName}" HorizontalOptions="StartAndExpand" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+
+                        </Frame>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
