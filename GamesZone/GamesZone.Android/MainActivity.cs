@@ -25,7 +25,8 @@ namespace GamesZone.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer:true);
             LoadApplication(new App());
-            //DependencyService.Register<IDeviceOrientationService, DeviceOrientationService>();
+            DependencyService.Register<IDeviceOrientationService, DeviceOrientationService>();
+            DependencyService.Register<IToastMessageService, ToastMessageService>();
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

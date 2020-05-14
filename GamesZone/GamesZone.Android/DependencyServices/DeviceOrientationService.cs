@@ -14,7 +14,7 @@ using GamesZone.DependencyServices;
 using GamesZone.Droid;
 using Xamarin.Forms.Internals;
 
-[assembly: DefaultDependency(LoadHint.Always)]
+[assembly: Xamarin.Forms.Dependency(typeof(DeviceOrientationService))]
 namespace GamesZone.Droid
 {
     public class DeviceOrientationService : IDeviceOrientationService
