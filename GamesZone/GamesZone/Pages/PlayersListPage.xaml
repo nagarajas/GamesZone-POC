@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<pages:BaseContentPage  xmlns:pages="clr-namespace:GamesZone.Pages" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,19 +11,14 @@
              xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
               xmlns:local="clr-namespace:GamesZone.MVVM"
              x:Class="GamesZone.MVVM.PlayersListPage" Title="Players List">
-    <ContentPage.Resources>
+    <pages:BaseContentPage.Resources>
         <ResourceDictionary>
             <local:TextChangedEventArgsToTextChangedConverter x:Key="TextChangedConverter" />
         </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
+    </pages:BaseContentPage.Resources>
+    <pages:BaseContentPage.Content>
         <StackLayout>
-            <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="Search by First Name ...." Margin="10" SearchCommand="{Binding SearchPlayers}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}" TextChanged="searchControl_TextChanged">
-                <custom:RoundedCornerSearchBar.Behaviors>
-                    <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
-            Converter="{StaticResource TextChangedConverter}" />
-                </custom:RoundedCornerSearchBar.Behaviors>
-            </custom:RoundedCornerSearchBar>
+            <custom:CommonSearch x:Name="searchBar1" PlaceholderText="Search by Player FName." SearchCommand="{Binding SearchPlayers}" SearchTextChangedCommand="{Binding SearchTextChangedCommand}"/>
             <flv:FlowListView FlowColumnCount="3" SeparatorVisibility="Default" HasUnevenRows="True" FlowItemsSource="{Binding PlayersList}" FlowItemTappedCommand="{Binding PlayerTappedCommand}" FlowLastTappedItem = "{Binding SelectedPlayer}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
@@ -40,5 +35,5 @@
             </flv:FlowListView>
         </StackLayout>
         
-    </ContentPage.Content>
-</ContentPage>
+    </pages:BaseContentPage.Content>
+</pages:BaseContentPage>

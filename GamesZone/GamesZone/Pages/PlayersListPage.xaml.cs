@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GamesZone.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace GamesZone.MVVM
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PlayersListPage : ContentPage
+    public partial class PlayersListPage : BaseContentPage
     {
         public PlayersListPage()
         {

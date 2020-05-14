@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<pages:BaseContentPage  xmlns:pages="clr-namespace:GamesZone.Pages" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="GamesZone.MVVM.GameDetailsPage" Title="Game Details">
-    <ContentPage.Resources>
+    <pages:BaseContentPage.Resources>
         <Style TargetType="Label">
             <Setter Property="Padding" Value="10"/>
         </Style>
         <Style TargetType="Label" Class="HeaderLabel">
             <Setter Property="Padding" Value="10"/>
         </Style>
-    </ContentPage.Resources>
-    <ContentPage.Content>
+    </pages:BaseContentPage.Resources>
+    <pages:BaseContentPage.Content>
         <StackLayout BackgroundColor="White">
             <Grid Padding="10" RowSpacing="0">
                 <Grid.RowDefinitions>
@@ -56,5 +56,5 @@
                 </Label>
             </Grid>
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </pages:BaseContentPage.Content>
+</pages:BaseContentPage>

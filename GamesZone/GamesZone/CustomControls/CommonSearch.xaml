@@ -5,18 +5,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:GamesZone.MVVM" xmlns:custom="clr-namespace:GamesZone.CustomControls"
-             x:Class="GamesZone.MVVM.CommonSearch">
+             x:Class="GamesZone.CustomControls.CommonSearch"
+             x:Name="this">
     <ContentView.Resources>
         <ResourceDictionary>
             <local:TextChangedEventArgsToTextChangedConverter x:Key="TextChangedConverter" />
         </ResourceDictionary>
     </ContentView.Resources>
   <ContentView.Content>
-        <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="Search by Team Abbr. e.g.HAM ...." Margin="10" SearchCommand="{Binding SearchGames}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
-            <custom:RoundedCornerSearchBar.Behaviors>
-                <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
+        <StackLayout BindingContext="{x:Reference this}">
+            <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="{Binding PlaceholderText}" Margin="10" SearchCommand="{Binding SearchCommand}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
+                <custom:RoundedCornerSearchBar.Behaviors>
+                    <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
             Converter="{StaticResource TextChangedConverter}" />
-            </custom:RoundedCornerSearchBar.Behaviors>
-        </custom:RoundedCornerSearchBar>
+                </custom:RoundedCornerSearchBar.Behaviors>
+            </custom:RoundedCornerSearchBar>
+        </StackLayout>
     </ContentView.Content>
 </ContentView>

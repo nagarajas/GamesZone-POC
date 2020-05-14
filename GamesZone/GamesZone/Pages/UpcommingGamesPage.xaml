@@ -14,12 +14,7 @@
     </pages:BaseContentPage.Resources>
     <pages:BaseContentPage.Content>
         <StackLayout>
-            <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="Search by Team Abbr. e.g.HAM ...." Margin="10" SearchCommand="{Binding SearchGames}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
-                <custom:RoundedCornerSearchBar.Behaviors>
-                    <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
-            Converter="{StaticResource TextChangedConverter}" />
-                </custom:RoundedCornerSearchBar.Behaviors>
-            </custom:RoundedCornerSearchBar>
+            <custom:CommonSearch x:Name="searchBar1" PlaceholderText="Search by Team abbr." SearchCommand="{Binding SearchGamesCommand}" SearchTextChangedCommand="{Binding SearchTextChangedCommand}"/>
             <ListView x:Name="lstUpcommingGames" ItemsSource="{Binding UpcommingGames}" HasUnevenRows="True" BackgroundColor="White" SeparatorVisibility="None">
                 <ListView.Behaviors>
                     <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding SelectGameCommand}" 
