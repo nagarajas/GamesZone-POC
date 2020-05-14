@@ -21,18 +21,47 @@
                 </custom:RoundedCornerSearchBar.Behaviors>
             </custom:RoundedCornerSearchBar>
             <ListView x:Name="lstUpcommingGames" ItemsSource="{Binding UpcommingGames}" HasUnevenRows="True" BackgroundColor="White" SeparatorVisibility="None">
-            <ListView.Behaviors>
-                <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding SelectGameCommand}" 
+                <ListView.Behaviors>
+                    <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding SelectGameCommand}" 
             Converter="{StaticResource SelectedItemConverter}" />
-	</ListView.Behaviors>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <local:GamesListTemplate/>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                </ListView.Behaviors>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BorderColor="White" HasShadow="True" CornerRadius="5" Margin="5" BackgroundColor="White">
+                                <StackLayout Orientation="Horizontal">
+                                    <Grid BackgroundColor="White">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5.*"/>
+                                            <ColumnDefinition Width="5.*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding GameNumber}" HorizontalTextAlignment="Start"/>
+                                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Venue}" HorizontalOptions="End"/>
+                                        <Label Grid.Row="1" FontAttributes="Bold" Grid.ColumnSpan="2" Text="{Binding TeamInfo}" HorizontalOptions="Start"/>
+                                        <Label Grid.Row="2" Grid.Column="0" Text="{Binding MatchDateTime}" HorizontalOptions="Start"/>
+                                        <Label Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Book tickets" TextColor="Blue" TextDecorations="Underline">
+                                                        <Span.GestureRecognizers>
+                                                            <TapGestureRecognizer Command="{Binding TapTicketsLinkCommand}" CommandParameter="{Binding TicketsURL}" />
+                                                        </Span.GestureRecognizers>
+                                                    </Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

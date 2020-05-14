@@ -11,6 +11,11 @@ namespace GamesZone.MVVM
 {
     public class PlayerDetailsPageModel : FreshBasePageModel
     {
+        #region Private variables
+        private IPlayerService playerService; 
+        #endregion
+
+        #region Properties
         public string FullName { get; set; }
         public string BirthDate { get; set; }
         public string BirthPlace { get; set; }
@@ -21,9 +26,9 @@ namespace GamesZone.MVVM
         public string ImageURL { get; set; }
         public string SchoolName { get; set; }
         public string Position { get; set; }
+        #endregion
 
-        private IPlayerService playerService;
-
+        #region Lifecycle methods
         public override void Init(object initData)
         {
             if (initData != null)
@@ -34,13 +39,16 @@ namespace GamesZone.MVVM
 
             base.Init(initData);
         }
+        #endregion
 
-
+        #region Constructor
         public PlayerDetailsPageModel(IPlayerService service)
         {
             playerService = service;
-        }
+        } 
+        #endregion
 
+        #region Private methods
         private void GetPlayerDetails(int playerId)
         {
             Player playerInfo = playerService.GetPlayerDetails(playerId);
@@ -54,6 +62,7 @@ namespace GamesZone.MVVM
             IsForeignPlayer = playerInfo.ForeignPlayer ? "Yes" : "No";
             ImageURL = (playerInfo.ImageURL != null && playerInfo.ImageURL != "") ? playerInfo.ImageURL : "defaultuser.png";
             Position = playerInfo.Position.Description;
-        }
+        } 
+        #endregion
     }
 }

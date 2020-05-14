@@ -47,7 +47,7 @@
                   TextColor="Blue"
                   TextDecorations="Underline">
                                 <Span.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                    <TapGestureRecognizer Command="{Binding TapTicketsLinkCommand}"
                                           CommandParameter="{Binding TicketsURL}" />
                                 </Span.GestureRecognizers>
                             </Span>

@@ -18,7 +18,7 @@ namespace GamesZone.Models
         public string MatchDateTime { get; set; }
         public string TicketsURL { get; set; }
 
-        public ICommand TapCommand
+        public ICommand TapTicketsLinkCommand
         {
             get
             {

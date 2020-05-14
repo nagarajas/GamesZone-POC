@@ -11,6 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="PageModels\SearchPageModel.cs" />
+    <Compile Remove="Pages\GamesListTemplate.xaml.cs" />
+    <Compile Remove="Pages\SearchPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\GamesListTemplate.xaml" />
+    <EmbeddedResource Remove="Pages\SearchPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DLToolkit.Forms.Controls.FlowListView" Version="2.0.11" />
     <PackageReference Include="FreshMvvm" Version="3.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
@@ -33,16 +44,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AppShell.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Pages\CommonSearch.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\GameDetailsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Pages\GamesListTemplate.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\LandingPage.xaml">
@@ -52,9 +57,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\PlayersListPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Pages\SearchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\UpcommingGamesPage.xaml">

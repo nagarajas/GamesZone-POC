@@ -24,12 +24,10 @@
             Converter="{StaticResource TextChangedConverter}" />
                 </custom:RoundedCornerSearchBar.Behaviors>
             </custom:RoundedCornerSearchBar>
-            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
             <flv:FlowListView FlowColumnCount="3" SeparatorVisibility="Default" HasUnevenRows="True" FlowItemsSource="{Binding PlayersList}" FlowItemTappedCommand="{Binding PlayerTappedCommand}" FlowLastTappedItem = "{Binding SelectedPlayer}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
-                        <Frame BackgroundColor="White" Margin="5" BorderColor="White"
-HasShadow="True"       CornerRadius="5">
+                        <Frame BackgroundColor="White" Margin="5" BorderColor="White" HasShadow="True" CornerRadius="5">
                             <StackLayout>
                                 <ff:CachedImage Source="{Binding ImageURL}" ErrorPlaceholder="defaultuser.PNG" LoadingPlaceholder="defaultuser.png"/>
                                 <!--<Image Source="https://www.iconsdb.com/icons/preview/maroon/free-badge-xxl.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="100"/>-->

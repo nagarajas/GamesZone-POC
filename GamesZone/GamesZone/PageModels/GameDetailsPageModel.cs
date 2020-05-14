@@ -12,6 +12,7 @@ namespace GamesZone.MVVM
 {
     public class GameDetailsPageModel : FreshBasePageModel
     {
+        #region Properties
         public string Team1Info { get; set; }
         public string Team2Info { get; set; }
         public string MatchNumber { get; set; }
@@ -20,11 +21,16 @@ namespace GamesZone.MVVM
         public string SeasonWeekGame { get; set; }
         public string Week { get; set; }
         public string Venue { get; set; }
-
         public string EventType { get; set; }
+        public ICommand TapTicketsLinkCommand { get; set; }
+        #endregion
 
+
+        #region Private variables
         private IGameService gameService;
+        #endregion
 
+        #region Lifecycle methods
         public override void Init(object initData)
         {
             if (initData != null)
@@ -35,21 +41,24 @@ namespace GamesZone.MVVM
 
             base.Init(initData);
         }
+        #endregion
 
-        public ICommand TapCommand
-        {
-            get
-            {
-                return new Command<string>(async (url) => await Launcher.OpenAsync(url));
-
-            }
-        }
-
+        #region Constructor
         public GameDetailsPageModel(IGameService service)
         {
             gameService = service;
+            TapTicketsLinkCommand = new Command<string>(TapTicketLink);
         }
+        #endregion
 
+        #region Command handler
+        async void TapTicketLink(string url)
+        {
+            await Launcher.OpenAsync(url);
+        }
+        #endregion
+
+        #region Private methods
         private void GetGameDetails(int gameId)
         {
             Game gameInfo = gameService.GetGameDetails(gameId);
@@ -61,6 +70,7 @@ namespace GamesZone.MVVM
             TicketsURL = gameInfo.TicketsURL;
             EventType = gameInfo.EventType.Name;
             MatchDateTime = gameInfo.StartDate.LocalDateTime.ToString("ddd, dd MMM yyyy, HH:mm");
-        }
+        } 
+        #endregion
     }
 }
