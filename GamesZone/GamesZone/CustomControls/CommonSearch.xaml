@@ -14,7 +14,7 @@
     </ContentView.Resources>
   <ContentView.Content>
         <StackLayout BindingContext="{x:Reference this}">
-            <custom:RoundedCornerSearchBar x:Name="searchControl" Placeholder="{Binding PlaceholderText}" Margin="10" SearchCommand="{Binding SearchCommand}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
+            <custom:RoundedCornerSearchBar x:Name="searchControl" Text="{Binding SearchText, Mode=TwoWay}" Placeholder="{Binding PlaceholderText}" Margin="10" SearchCommand="{Binding SearchCommand}" SearchCommandParameter="{Binding Text, Source={x:Reference searchControl}}">
                 <custom:RoundedCornerSearchBar.Behaviors>
                     <local:EventToCommandBehavior EventName="TextChanged" Command="{Binding SearchTextChangedCommand}" 
             Converter="{StaticResource TextChangedConverter}" />

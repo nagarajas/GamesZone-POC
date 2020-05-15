@@ -17,6 +17,7 @@ namespace GamesZone.CustomControls
         public static readonly BindableProperty PlaceholderTextProperty = BindableProperty.Create(nameof(PlaceholderText), typeof(string), typeof(CommonSearch), string.Empty);
         public static readonly BindableProperty SearchCommandProperty = BindableProperty.Create(nameof(SearchCommand), typeof(ICommand), typeof(CommonSearch), null);
         public static readonly BindableProperty SearchTextChangedCommandProperty = BindableProperty.Create(nameof(SearchTextChangedCommand), typeof(ICommand), typeof(CommonSearch), null);
+        public static readonly BindableProperty SearchTextProperty = BindableProperty.Create(nameof(SearchText), typeof(string), typeof(CommonSearch), null);
 
         public string PlaceholderText
         {
@@ -29,6 +30,12 @@ namespace GamesZone.CustomControls
             get { return (ICommand)GetValue(SearchTextChangedCommandProperty); }
             set { 
                 SetValue(SearchTextChangedCommandProperty, value); }
+        }
+
+        public string SearchText
+        {
+            get { return (string)GetValue(SearchTextProperty); }
+            set { SetValue(SearchTextProperty, value); }
         }
 
         public ICommand SearchCommand
