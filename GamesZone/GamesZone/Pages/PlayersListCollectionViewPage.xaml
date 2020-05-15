@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BaseContentPage  xmlns:pages="clr-namespace:GamesZone.Pages" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"  
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"  
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" xmlns:custom="clr-namespace:GamesZone.CustomControls"
+             x:Class="GamesZone.MVVM.PlayersListCollectionViewPage" Title="Players List">
+    <pages:BaseContentPage.Content>
+        <StackLayout>
+            <custom:CommonSearch x:Name="searchBar2" PlaceholderText="Search by Player FName." SearchCommand="{Binding SearchPlayers}" SearchText="{Binding SearchFilterText,Mode=TwoWay}"/>
+            <CollectionView x:Name="playersList" ItemsSource="{Binding PlayersList}" SelectionMode="Single" SelectedItem="{Binding SelectedPlayer}" SelectionChangedCommand="{Binding PlayerSelectionChangedCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White" Margin="5" BorderColor="White" HasShadow="True" CornerRadius="5">
+                            <StackLayout Orientation="Horizontal">
+                                <ff:CachedImage Source="{Binding ImageURL}" ErrorPlaceholder="defaultuser.PNG" LoadingPlaceholder="defaultuser.png" WidthRequest="80"/>
+                                <!--<Image Source="https://www.iconsdb.com/icons/preview/maroon/free-badge-xxl.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="100"/>-->
+                                <Label Text="{Binding FullName}" HorizontalOptions="StartAndExpand" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            </StackLayout>
+
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </pages:BaseContentPage.Content>
+</pages:BaseContentPage>

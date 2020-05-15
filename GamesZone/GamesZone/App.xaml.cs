@@ -22,8 +22,9 @@ namespace GamesZone
         private void SetMainPage()
         {
             var tabbedNavigation = new FreshBottomTabbedNavigationContainer();
-            tabbedNavigation.AddTab<UpcommingGamesPageModel>("Upcomming Games", null);
-            tabbedNavigation.AddTab<PlayersListPageModel>("Players List", null);
+            tabbedNavigation.AddTab<UpcommingGamesPageModel>("Upcomming_Games", null);
+            tabbedNavigation.AddTab<PlayersListPageModel>("PlayersList_FL", null);
+            tabbedNavigation.AddTab<PlayersListCollectionViewPageModel>("PlayersList_CV", null);
             MainPage = tabbedNavigation;
         }
 

@@ -35,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Pages\PlayersListCollectionViewPage.xaml.cs">
+      <DependentUpon>PlayersListCollectionViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\PlayersListPage.xaml.cs">
       <DependentUpon>PlayersListPage.xaml</DependentUpon>
     </Compile>
@@ -54,6 +57,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\PlayerDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\PlayersListCollectionViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\PlayersListPage.xaml">
