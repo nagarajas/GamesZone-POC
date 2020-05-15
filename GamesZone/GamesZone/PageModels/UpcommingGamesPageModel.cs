@@ -18,6 +18,7 @@ namespace GamesZone.MVVM
         #region Private variables
         private IGameService gameService;
         private ObservableCollection<GameInfoCard> upcommingGames;
+        private string searchFilterText;
         #endregion
 
         #region Event delegates
@@ -39,9 +40,21 @@ namespace GamesZone.MVVM
             }
         }
         public ICommand SelectGameCommand { get; private set; }
-        public ICommand SearchTextChangedCommand { get; set; }
 
         public ICommand SearchGamesCommand { get; set; }
+
+        public string SearchFilterText
+        {
+            get
+            {
+                return searchFilterText;
+            }
+            set
+            {
+                searchFilterText = value;
+                UpcommingGames = GetSearchResults(searchFilterText);
+            }
+        }
         #endregion
 
         #region Constructor
@@ -49,7 +62,6 @@ namespace GamesZone.MVVM
         {
             gameService = service;
             SelectGameCommand = new Command<GameInfoCard>(SelectGame);
-            SearchTextChangedCommand = new Command<string>(SearchTextChanged);
             SearchGamesCommand = new Command<string>(SearchGames);
         }
         #endregion
@@ -80,11 +92,6 @@ namespace GamesZone.MVVM
         void SearchGames(string query)
         {
             UpcommingGames = GetSearchResults(query);
-        }
-
-        async void SearchTextChanged(string newText)
-        {
-            UpcommingGames = GetSearchResults(newText);
         }
 
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")

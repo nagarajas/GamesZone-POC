@@ -14,7 +14,7 @@
     </pages:BaseContentPage.Resources>
     <pages:BaseContentPage.Content>
         <StackLayout>
-            <custom:CommonSearch x:Name="searchBar1" PlaceholderText="Search by Team abbr." SearchCommand="{Binding SearchGamesCommand}" SearchTextChangedCommand="{Binding SearchTextChangedCommand}"/>
+            <custom:CommonSearch x:Name="searchBar1" SearchText="{Binding SearchFilterText, Mode=TwoWay}" PlaceholderText="Search by Team abbr." SearchCommand="{Binding SearchGamesCommand}"/>
             <ListView x:Name="lstUpcommingGames" ItemsSource="{Binding UpcommingGames}" HasUnevenRows="True" BackgroundColor="White" SeparatorVisibility="None">
                 <ListView.Behaviors>
                     <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding SelectGameCommand}" 
