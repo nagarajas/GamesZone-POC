@@ -58,7 +58,7 @@ namespace GamesZone.MVVM
         #endregion
 
         #region Constructor
-        public UpcommingGamesPageModel(IGameService service, IPlayerService ps)
+        public UpcommingGamesPageModel(IGameService service)
         {
             gameService = service;
             SelectGameCommand = new Command<GameInfoCard>(SelectGame);
